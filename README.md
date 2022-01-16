@@ -3,7 +3,7 @@
 This repository exists only for demonstrating a use case that I am failing to understand. 
 
 ## Scenario
-Durinng the course of converting an opensource module from CJS to ESM I have discarded some of the tooling. Explicitly
+During the course of converting an opensource module from CJS to ESM I have discarded some tooling. Explicitly
 
 - babel
 - babel rewire
@@ -15,4 +15,9 @@ started to use testdouble. It is by all means an excellent tool.
 
 ![SyntaxError: The requested module 'is-number' does not provide an export named 'default'](/images/no-default-exported.png)
 
+What I believe I am seeing is that for the [is-number module](https://www.npmjs.com/package/is-number) frequently used
+in the testdouble documentation for the **third-party-thing-test** we will see issues because it has no default export or
+named export.
 
+Am I seeing this correctly? If so is it worth me documenting this scenario and saying that one solution is to wrap the 
+third party solution in your own module and to mock that?
