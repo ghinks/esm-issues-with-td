@@ -12,6 +12,8 @@ I have found that the babel rewire tool was very useful for custom mocks of thir
 
 Moving to a fully ESM based solution meant switching mocking tooling. After reading some of Gil Tayar's postings I 
 started to use testdouble. It is by all means an excellent tool. 
+However is there an assumption for the **third-party-thing-test** that when using ESM the imported third party module is
+also ESM?
 
 ![SyntaxError: The requested module 'is-number' does not provide an export named 'default'](/images/no-default-exported.png)
 
