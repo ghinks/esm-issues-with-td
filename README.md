@@ -1,4 +1,4 @@
-# Sample Repository for Issues Encountered with ESM and double Test for Third Party Node Libraries.
+# testdouble third-party-test-thing with ESM module based tests using Mocha
 
 This repository exists only for demonstrating a use case that I am failing to understand. 
 
@@ -19,7 +19,8 @@ also ESM?
 
 What I believe I am seeing is that for the [is-number module](https://www.npmjs.com/package/is-number) frequently used
 in the testdouble documentation for the **third-party-thing-test** we will see issues because it has no default export or
-named export.
+named export as it is CJS.
 
-Am I seeing this correctly? If so is it worth me documenting this scenario and saying that one solution is to wrap the 
+Am I seeing this correctly? If so is it worth me documenting (I'm volunteering) this scenario and saying that one solution is to wrap the 
 third party solution in your own module and to mock that?
+
