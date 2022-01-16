@@ -1,0 +1,21 @@
+{
+  "name": "esm-issues-with-td",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "mocha": "^9.1.4",
+    "testdouble": "^3.16.4"
+  },
+  "dependencies": {
+    "is-number": "^7.0.0"
+  }
+}
