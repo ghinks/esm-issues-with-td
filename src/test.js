@@ -40,12 +40,12 @@ describe('ESM test double experiments', () => {
 
     })
     it('should expect to get 5 truthy results', async () => {
-      const isNumber = (await import('./index.js')).default
+      const isNumber = await import('./index.js')
       const arrayUnderTest = [1, 2, 3, 4, 5]
       const result = isNumber(arrayUnderTest)
       expect(result).to.be.an('Array')
       expect(result.length).to.equal(5)
-      result.forEach((v) => expect(v).to.be.true)
+      result.forEach((v) => expect(v).to.be.false)
     })
   })
 })
