@@ -15,11 +15,11 @@ started to use testdouble. It is by all means an excellent tool.
 However is there an assumption for the **third-party-thing-test** that when using ESM the imported third party module is
 also ESM?
 
-![SyntaxError: The requested module 'is-number' does not provide an export named 'default'](/images/no-default-exported.png)
+![is-number does not appear to be mocked](/images/screen-shot-of-test.png)
 
 What I believe I am seeing is that for the [is-number module](https://www.npmjs.com/package/is-number) frequently used
-in the testdouble documentation for the **third-party-thing-test** we will see issues because it has no default export or
-named export as it is CJS.
+in the testdouble documentation for the **third-party-thing-test** the case where an ESM module uses a CJS module the 
+replace is not working as documented.
 
 Am I seeing this correctly? If so is it worth me documenting (I'm volunteering) this scenario and saying that one solution is to wrap the 
 third party solution in your own module and to mock that?

@@ -3,7 +3,7 @@ import { expect } from 'chai'
 
 describe('ESM test double experiments', () => {
   describe('complex scenario', () => {
-    beforeEach(async () => {
+    beforeEach(() => {
       td.replace('is-number', () => {
         console.log('expect to see this called')
         return false
